@@ -1,4 +1,4 @@
-//To Find The Sum of Array
+//To Find The Average of an Array
 #include <iostream>
 using namespace std;
 
@@ -16,4 +16,5 @@ int main() {
     cout << "Average value: " << findAverage(arr, s) << endl;
     return 0;
 }
+
 
