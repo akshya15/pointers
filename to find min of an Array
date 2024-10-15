@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int findMin(int *arr, int n) {
+    int min = *arr;
+    for (int i = 1; i < n; i++) {
+        if (*(arr + i) < min) {
+            min = *(arr + i);
+        }
+    }
+    return min;
+}
+
+int main() {
+    int arr[] = {10, 25, 3, 45, 89, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("Minimum element is %d\n", findMin(arr, n));
+    return 0;
+}
