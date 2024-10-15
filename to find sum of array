@@ -1,0 +1,19 @@
+//To Find The Sum of Array
+#include <iostream>
+using namespace std;
+
+double findAverage(int *arr, int s) {
+    int sum = 0;
+    for (int i = 0; i < s; i++) {
+        sum += *(arr + i);
+    }
+    return (double)sum / s;
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int s = sizeof(arr) / sizeof(arr[0]);
+    cout << "Average value: " << findAverage(arr, s) << endl;
+    return 0;
+}
+
